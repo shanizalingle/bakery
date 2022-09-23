@@ -4,24 +4,24 @@ namespace Bakery.Models
 {
   public class BakeryShop
   {
-    public int BreadCost { get; set; }
+    public int Bread { get; set; }
 
-    public int PastryCost { get; set; }
+    public int Pastry { get; set; }
 
-    public BakeryShop (int breadCost, int pastryCost)
+    public BakeryShop (int bread, int pastry)
     {
-      BreadCost = breadCost;
-      PastryCost = pastryCost;
+      Bread = bread;
+      Pastry = pastry;
     }
 
-    public int GetBreadCost(int breadCost)
+    public int GetBreadCost(int bread)
     {
-      return BreadCost;
+      return Bread;
     }
 
-    public int GetPastryCost(int pastryCost)
+    public int GetPastryCost(int pastry)
     {
-      return PastryCost;
+      return Pastry;
     }
   }
 }

@@ -9,20 +9,20 @@ namespace Bakery.Tests
     [TestMethod]
     public void BakeryConstructor_CreatesInstanceOfBakery_Constructor()
     {
-      BakeryShop newBakery = new BakeryShop(1, 1);
-      Assert.AreEqual(typeof(BakeryShop), newBakery.GetType());
+      BakeryShop bakeryShop = new BakeryShop(1, 1);
+      Assert.AreEqual(typeof(BakeryShop), bakeryShop.GetType());
     }
 
     [TestMethod]
     public void GetItem_ReturnsCost_Int()
     {
-      int breadCost = 5;
-      int pastryCost = 2;
-      BakeryShop newBakery = new BakeryShop(breadCost, pastryCost);
-       int totalBread = newBakery.BreadCost;
-      int totalPastry = newBakery.PastryCost;
+      int bread = 2;
+      int pastry = 1;
+      BakeryShop bakeryShop = new BakeryShop(bread, pastry);
+       int totalBread = bakeryShop.Bread;
+      int totalPastry = bakeryShop.Pastry;
       int total = totalBread + totalPastry;
-      Assert.AreEqual(total, 7);
+      Assert.AreEqual(total, 3);
     }
   }
 }
