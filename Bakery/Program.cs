@@ -48,9 +48,14 @@ namespace Bakery.Models
           Console.WriteLine("\n" + "Continue Order --------------------------------" + "\n");
           repeat = true;
         }
+        else if (response == "no")
+        {
+          Console.WriteLine("\n" + "Thank you for shopping with us!" + "\n" + "Goodbye!");
+          repeat = false;
+        }
         else 
         {
-          repeat = false;
+          Console.WriteLine("\n" + "That command was not found, please try again" + "\n");
         }
       }
     }
