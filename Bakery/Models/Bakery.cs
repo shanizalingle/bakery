@@ -8,13 +8,20 @@ namespace Bakery.Models
 
     public int PastryCost { get; set; }
 
-    public int BakeryItems(int breadCost, int pastryCost)
+    public BakeryShop (int breadCost, int pastryCost)
     {
       BreadCost = breadCost;
       PastryCost = pastryCost;
-      return breadCost;
-      return pastryCost;
     }
 
+    public int GetBreadCost(int breadCost)
+    {
+      return BreadCost;
+    }
+
+    public int GetPastryCost(int pastryCost)
+    {
+      return PastryCost;
+    }
   }
 }
