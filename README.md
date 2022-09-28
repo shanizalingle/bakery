@@ -18,6 +18,8 @@ _Welcome to Pierre's Bakery! Order bread for $5 and pastries for $2, then see yo
 ## Setup/Installation Requirements
 
 * _Clone this repository to your desktop_
+* _Run $ dotnet restore_
+* _Run $ dotnet build_
 * _Run application by using $ dotnet run_
 
 ## Known Bugs
