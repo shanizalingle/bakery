@@ -2,7 +2,7 @@ using System;
 
 namespace Bakery.Models
 {
-  public class Program
+  public class Bakery
   {
 
     public static void Main()
@@ -25,9 +25,10 @@ namespace Bakery.Models
       
         Console.WriteLine("\n" + "Checkout --------------------------------------" + "\n");
 
-        BakeryShop bakeryShop = new BakeryShop(bread, pastry);
-        int breadCost = bakeryShop.GetBreadCost(bread);
-        int pastryCost = bakeryShop.GetPastryCost(pastry);
+        GetBread getBread = new GetBread(bread);
+        GetPastry getPastry = new GetPastry(pastry);
+        int breadCost = getBread.GetBreadCost(bread);
+        int pastryCost = getPastry.GetPastryCost(pastry);
         int totalCost = breadCost + pastryCost;
 
         if (bread > 0 || pastry > 0)
