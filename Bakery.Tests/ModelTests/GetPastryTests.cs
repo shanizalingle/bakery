@@ -18,8 +18,8 @@ namespace Bakery.Tests
     {
       int pastry = 5;
       GetPastry getPastry = new GetPastry(pastry);
-      int totalPastry = getPastry.pastry;
-      Assert.AreEqual(totalPastry, 5;
+      int totalPastry = getPastry.Pastry;
+      Assert.AreEqual(totalPastry, 5);
     }
 
     [TestMethod]
